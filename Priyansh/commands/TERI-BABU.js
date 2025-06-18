@@ -12,8 +12,8 @@ module.exports.config = {
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
         var { threadID, messageID } = event;
         let react = event.body.toLowerCase();
-        if(react.includes("M͓̐̂𝆭ɛ͎ S͎ͯʌ𝆭𝆭߬͜͡ɳ͡Jʌ𝆭𝆭߬͜͡ɳ͡ʌ𝆭𝆭߬͜͡") ||
-     react.includes("sanJana") || react.includes("@™⏤͟͟͞͞✺Cʌ𝆭᪳͜ɭ𝆭ɭ M͓̐̂𝆭ɛ͎ S͎ͯʌ𝆭𝆭߬͜͡ɳ͡Jʌ𝆭𝆭߬͜͡ɳ͡ʌ𝆭𝆭߬͜͡  X ⃝d  🪻🩷🪿") || react.includes("sanjana") ||
+        if(react.includes("SanjaNa") ||
+     react.includes("sanJana") || react.includes("@™⏤͟͟͞͞✺Cʌ𝆭᪳͜ɭ𝆭ɭ M͓̐̂𝆭ɛ͎ S͎ͯʌ𝆭𝆭߬͜͡ɳ͡Jʌ𝆭𝆭߬͜͡ɳ͡ʌ𝆭𝆭߬͜͡  X ⃝d") || react.includes("sanjana") ||
 react.includes("Sanjana") ||
 react.includes("SANJANA")) {
                 var msg = {
