@@ -7,7 +7,7 @@ module.exports = {
         name: "owner",
         version: "1.0.1",
         hasPermssion: 0,
-        credits: "SHANKAR SUMAN",
+        credits: "AADI SHRIVTASTAV",
         description: "no prefix",
         usePrefix: false,
         commandCategory: "No command marks needed",
@@ -26,7 +26,7 @@ module.exports = {
             "https://i.imgur.com/BNuCzHx.jpeg"
         ];
 
-        const message = "𝐎𝐰𝐧𝐞𝐫 ➻  🥀  𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮\n\n● ────────────────── ●\n\n𝐌𝐘 𝐎𝐰𝐧𝐞𝐑 𝐀𝐚𝐝𝐢 𝐁𝐚𝐁𝐮 .... < 𝐄𝐃𝐈𝐓 > .... 𝐘𝐞 𝐁𝐨𝐓 𝐒𝐢𝐫𝐅 𝐎𝐰𝐧𝐞𝐑 𝐊 𝐋𝐢𝐘𝐞 𝐇 .... 𝐌𝐮𝐣𝐇𝐞 𝐀𝐚𝐏 𝐋𝐨𝐆𝐨 𝐊𝐨 𝐇𝐚𝐬𝐚𝐍𝐞 𝐊 𝐋𝐢𝐘𝐞 𝐁𝐚𝐧𝐘𝐚 𝐆𝐲𝐚 𝐇 𝐓𝐨𝐇 𝐇𝐚𝐩𝐩𝐘 𝐑𝐞𝐇𝐚𝐍𝐀 𝐀𝐩𝐩𝐤𝐚 𝐀𝐩𝐩𝐧𝐚 𝐎𝐰𝐧𝐞𝐑 𝐀𝐚𝐝𝐢 𝐁𝐚𝐁𝐮\n\n● ────────────────── ●\n\n\n𝐎𝐰𝐧𝐞𝐫 ➻  𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮";
+        const message = "🔰   𝐎𝐰𝐧𝐞𝐫 𝐈𝐧𝐟𝐨     🔰\n\n• ❅ ─── ✧ ❅ ✦ ❅ ✧ ─── ❅ •\n\n𝐎𝐰𝐧𝐞𝐫 ➻  𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮\n\n𝐀𝐠𝐞 : 22\n\n𝐑𝐞𝐥𝐚𝐭𝐢𝐨𝐧𝐬𝐡𝐢𝐩 𝐖𝐢𝐭𝐡 : 𝐈𝐓𝐙 𝐁𝐑𝐎𝐊𝐄𝐍 𝐍𝐎𝐓 𝐢𝐧𝐓𝐞𝐫𝐞𝐬𝐭𝐞𝐃 𝐋𝐨𝐯𝐞\n\n𝐅𝐫𝐨𝐦 : 𝐮𝐩-𝐁𝐚𝐑𝐞𝐢𝐥𝐥𝐘\n\n𝐒𝐭𝐮𝐝𝐲 : I T I  = IN THE FIELD OF 𝐂𝐨𝐦𝐩𝐮𝐭𝐞𝐫 𝐏𝐫𝐨𝐠𝐫𝐚𝐦𝐦𝐢𝐧𝐠\n\n𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐋𝐢𝐧𝐤 : [ https://m.me/aadishrivtastav143 ]\n\n𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 : SECRET H BOSS\n\n🥀💚🥺__𝐢𝐧𝐭𝐞𝐳𝐚𝐚𝐫 𝐡𝐚𝐦𝐞𝐬𝐡𝐚 𝐤𝐚𝐫𝐮 𝐠𝐚 𝐥𝐞𝐤𝐢𝐧 𝐚𝐚𝐰𝐚𝐳 𝐧𝐚𝐡𝐢 𝐝𝐮𝐧𝐠𝐚 🥺😔 𝐥𝐢𝐤𝐡𝐮 𝐠𝐚 𝐞𝐤 𝐬𝐡𝐚𝐲𝐫𝐢 𝐭𝐞𝐫𝐞 𝐧𝐚𝐦𝐞 𝐩𝐚𝐫 𝐥𝐞𝐤𝐢𝐧 𝐭𝐞𝐫𝐚 𝐧𝐚𝐦𝐞 𝐧𝐚𝐡𝐢 𝐥𝐮𝐧𝐠𝐚 🥀";
         const { threadID, messageID } = event;
         const lowerCaseMessage = event.body.toLowerCase();
 
@@ -42,7 +42,7 @@ module.exports = {
                     attachment: fs.createReadStream(downloadPath)
                 };
                 api.sendMessage(msg, threadID, messageID);
-                api.setMessageReaction("😘", event.messageID, (err) => {}, true);
+                api.setMessageReaction("📸", event.messageID, (err) => {}, true);
             });
         }
     },
