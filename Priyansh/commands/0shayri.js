@@ -1,12 +1,12 @@
 const fs = global.nodemodule["fs-extra"];
 module.exports.config = {
-  name: "joke",
+  name: "shayri",
   version: "1.0.1",
   hasPermssion: 0,
-  credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
-  description: "Ranmdom a joke",
+  credits: "RDX AADI-BABU-API",
+  description: "Ranmdom a Shayri",
   commandCategory: "group",
-  usages: "joke",
+  usages: "shayri",
   cooldowns: 5,
 };
 module.exports.handleEvent = async function({ api, event, args, Threads, Users }) {
@@ -22,9 +22,9 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
 
    mess = "{name}"
 
-  if (event.body.indexOf("joke") == 0 || (event.body.indexOf("Joke") == 0)) {
+  if (event.body.indexOf("Shayri") == 0 || (event.body.indexOf("shayri") == 0)) {
     var msg = {
-      body: `𝐎𝐰𝐧𝐞𝐫    𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮\n\n\n${rand}`
+      body: `${rand}`
     }
     return api.sendMessage(msg, threadID, messageID);
   };
