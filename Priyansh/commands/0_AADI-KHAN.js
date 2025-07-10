@@ -1,71 +1,28 @@
-const emojiResponses = {
-  "HLO": {
-    "OWNER": [
-      "𝐇𝐦𝐦 𝐁𝐨𝐒𝐒 𝐀𝐚𝐝𝐢 𝐁𝐚𝐁𝐮 🙂💔",
-      "𝐁𝐡𝐮𝐓 𝐘𝐚𝐚𝐃 𝐊𝐢𝐘𝐚 𝐌𝐚𝐢𝐧𝐄 𝐀𝐩𝐩𝐊𝐨 🥺 🥺",
-      "𝐀𝐩𝐩 𝐊𝐡𝐚 𝐁𝐮𝐬𝐘 𝐓𝐡𝐞 𝐁𝐨𝐒𝐒 🥺 𝐌𝐚𝐢𝐍𝐞 𝐀𝐩𝐩𝐊𝐨 𝐁𝐡𝐮𝐓 𝐌𝐢𝐒𝐒 𝐊𝐢𝐘𝐚 ☹️☹️"
-    ]
-  },
-  "BABY": {
-     "OWNER": [
-      "𝐇𝐦𝐦 𝐁𝐨𝐒𝐒 𝐀𝐚𝐝𝐢 𝐁𝐚𝐁𝐮 🙂💔",
-      "𝐁𝐡𝐮𝐓 𝐘𝐚𝐚𝐃 𝐊𝐢𝐘𝐚 𝐌𝐚𝐢𝐧𝐄 𝐀𝐩𝐩𝐊𝐨 🥺 🥺",
-     "𝐀𝐩𝐩 𝐊𝐡𝐚 𝐁𝐮𝐬𝐘 𝐓𝐡𝐞 𝐁𝐨𝐒𝐒 🥺 𝐌𝐚𝐢𝐍𝐞 𝐀𝐩𝐩𝐊𝐨 𝐁𝐡𝐮𝐓 𝐌𝐢𝐒𝐒 𝐊𝐢𝐘𝐚 ☹️☹️""
-    ]
-  },
-  "baccha": {
-      "OWNER": [
-      "𝐇𝐦𝐦 𝐁𝐨𝐒𝐒 𝐀𝐚𝐝𝐢 𝐁𝐚𝐁𝐮 🙂💔",
-      "𝐁𝐡𝐮𝐓 𝐘𝐚𝐚𝐃 𝐊𝐢𝐘𝐚 𝐌𝐚𝐢𝐧𝐄 𝐀𝐩𝐩𝐊𝐨 🥺 🥺",
-      "𝐀𝐩𝐩 𝐊𝐡𝐚 𝐁𝐮𝐬𝐘 𝐓𝐡𝐞 𝐁𝐨𝐒𝐒 🥺 𝐌𝐚𝐢𝐍𝐞 𝐀𝐩𝐩𝐊𝐨 𝐁𝐡𝐮𝐓 𝐌𝐢𝐒𝐒 𝐊𝐢𝐘𝐚 ☹️☹️"
-    ]
-  }
-};
- 
+const fs = require("fs");
 module.exports.config = {
-  name: "-BOT",
-  version: "1.0.0",
-  hasPermssion: 0,
-  credits: "AADI BABU",
-  description: "MADE BY AADI BABU",
-  commandCategory: "No command marks needed",
-  cooldowns: 0,
+        name: "warning",
+    version: "1.1.1",
+        hasPermssion: admin,
+        credits: "AADI BABU", 
+        description: "THIS BOT IS AADI SHARMA",
+        commandCategory: "admin",
+    cooldowns: 5, 
 };
- 
-module.exports.handleEvent = async function({ api, event }) {
-  const { threadID, messageID, senderID, body } = event;
-  const emojis = Object.keys(emojiResponses);
- 
-  // Convert the message body to lowercase
-  const lowercaseBody = body.toLowerCase();
- 
-  for (const emoji of emojis) {
-    if (lowercaseBody.includes(emoji)) {
-      // Fetch user's gender correctly
-      const ThreadInfo = await api.getThreadInfo(threadID);
-      const user = ThreadInfo.userInfo.find(user => user.id === senderID);
-      const gender = user ? (user.gender ===     "MALE" ? "MALE" : "FEMALE") : "MALE";
- 
-      // Check if the sender is the bot owner
-      const botOwnerID = "100066401546757"; // Your bot owner UID
-      let responseArray;
- 
-      if (senderID === botOwnerID) {
-        responseArray = emojiResponses[emoji]["OWNER"];
-      } else {
-        responseArray = emojiResponses[emoji][gender] || emojiResponses[emoji]["MALE"];
-      }
- 
-      // Randomly select a response from the appropriate array
-      const randomResponse = responseArray[Math.floor(Math.random() * responseArray.length)];
- 
-      const msg = {
-        body: randomResponse,
-      };
-      api.sendMessage(msg, threadID, messageID);
-      break; // Exit the loop once a match is found
-    }
+
+module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
+        var { threadID, messageID } = event;
+        let react = event.body.toLowerCase();
+        if(react.includes("BABY") ||
+     react.includes("Baby") || react.includes("baby") || react.includes("Babu") ||
+react.includes("babu") ||
+react.includes("BABU")) {
+                var msg = {
+                                body: `𝐇𝐦𝐦 𝐁𝐨𝐒𝐒 𝐀𝐚𝐝𝐢 𝐁𝐚𝐁𝐮 🙂💔𝐁𝐡𝐮𝐓 𝐘𝐚𝐚𝐃 𝐊𝐢𝐘𝐚 𝐌𝐚𝐢𝐧𝐄 𝐀𝐩𝐩𝐊𝐨 🥺 🥺","𝐀𝐩𝐩 𝐊𝐡𝐚 𝐁𝐮𝐬𝐘 𝐓𝐡𝐞 𝐁𝐨𝐒𝐒 🥺"," 𝐌𝐚𝐢𝐍𝐞 𝐀𝐩𝐩𝐊𝐨 𝐁𝐡𝐮𝐓 𝐌𝐢𝐒𝐒 𝐊𝐢𝐘𝐚 ☹️☹️","`,
+                        }
+                        api.sendMessage(msg, threadID, messageID);
+    api.setMessageReaction("😆", event.messageID, (err) => {}, true)
+                }
+        }
+        module.exports.run = function({ api, event, client, __GLOBAL }) {
+
   }
-};
- 
-module.exports.run = function() {};
