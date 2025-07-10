@@ -2,10 +2,10 @@ const fs = require("fs");
 module.exports.config = {
         name: "warning",
     version: "1.1.1",
-        hasPermssion: admin,
+        hasPermssion: 0,
         credits: "AADI BABU", 
         description: "THIS BOT IS AADI SHARMA",
-        commandCategory: "admin",
+        commandCategory: "system",
     cooldowns: 5, 
 };
 
