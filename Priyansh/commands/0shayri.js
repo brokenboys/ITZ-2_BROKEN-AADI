@@ -1,12 +1,12 @@
 const fs = global.nodemodule["fs-extra"];
 module.exports.config = {
-  name: "shayri",
+  name: "shyri",
   version: "1.0.1",
   hasPermssion: 0,
   credits: "RDX AADI-BABU-API",
-  description: "Ranmdom a Shayri",
+  description: "Ranmdom a Shyri",
   commandCategory: "group",
-  usages: "shayri",
+  usages: "shyri",
   cooldowns: 5,
 };
 module.exports.handleEvent = async function({ api, event, args, Threads, Users }) {
