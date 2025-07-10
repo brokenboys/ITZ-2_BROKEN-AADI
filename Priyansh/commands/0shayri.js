@@ -1,12 +1,12 @@
 const fs = global.nodemodule["fs-extra"];
 module.exports.config = {
-  name: "shayri",
+  name: "joke",
   version: "1.0.1",
   hasPermssion: 0,
   credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
-  description: "Ranmdom a Shayri",
+  description: "Ranmdom a joke",
   commandCategory: "group",
-  usages: "shayri",
+  usages: "joke",
   cooldowns: 5,
 };
 module.exports.handleEvent = async function({ api, event, args, Threads, Users }) {
@@ -22,9 +22,9 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
 
    mess = "{name}"
 
-  if (event.body.indexOf("Shayri") == 0 || (event.body.indexOf("shayri") == 0)) {
+  if (event.body.indexOf("joke") == 0 || (event.body.indexOf("Joke") == 0)) {
     var msg = {
-      body: `${rand}`
+      body: `𝐎𝐰𝐧𝐞𝐫    𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮\n\n\n${rand}`
     }
     return api.sendMessage(msg, threadID, messageID);
   };
