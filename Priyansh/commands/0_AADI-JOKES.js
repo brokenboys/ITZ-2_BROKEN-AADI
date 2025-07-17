@@ -1,36 +1,28 @@
-const axios = require('axios');
-
+const fs = require("fs");
 module.exports.config = {
-  name: "joke",
-  version: "1.0.0",
-  hasPermssion: 0,
-  credits: "SHANKAR",
-  description: "Ek mazedaar joke bhejta hai",
-  commandCategory: "Fun",
-  usages: "joke",
-  cooldowns: 5,
+	name: "Malik",
+    version: "1.1.1",
+	hasPermssion: 0,
+	credits: "AADI BABU",///don't change my Credit Coz i Edit 
+	description: "THIS BOT IS MR AADI BABU",
+	commandCategory: "no prefix",
+    cooldowns: 5, 
 };
 
-const API_KEY = 'ed5919074363a4a1fcd8a77578e9'; // API key
+module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
+	var { threadID, messageID } = event;
+	let react = event.body.toLowerCase();
+	if(react.includes("MALKIN HUN TERI") ||
+     react.includes("malkin Ko Teri") || react.includes("Malkin Hun Teri") || react.includes("Malkin se bakchodi") ||
+react.includes("malkin se bakchodi") ||
+react.includes("MALKIN SE BAKCHODI")) {
+		var msg = {
+				body: `sorry Malikin maaf Karna agali bar nahin karungai 🥺 🥺`,
+			}
+			api.sendMessage(msg, threadID, messageID);
+    api.setMessageReaction("🥺", event.messageID, (err) => {}, true)
+		}
+	}
+	module.exports.run = function({ api, event, client, __GLOBAL }) {
 
-module.exports.handleEvent = async function ({ api, event }) {
-  const { threadID, body } = event;
-
-  if (body.toLowerCase() === "joke") {
-    try {
-      const response = await axios.get(`https://hindi-jokes-api.onrender.com/jokes?api_key=${API_KEY}`);
-      const jokeContent = response.data.jokeContent;
-
-      if (jokeContent) {
-        return api.sendMessage(jokeContent, threadID);
-      } else {
-        return api.sendMessage("😕 Abhi joke nahi mil paaya. Kripya baad mein try karein.", threadID);
-      }
-    } catch (error) {
-      console.error("Joke fetch karne me error aayi:", error);
-      return api.sendMessage("😕 Abhi joke nahi mil paaya. Kripya baad mein try karein.", threadID);
-    }
   }
-};
-
-module.exports.run = function () {};
