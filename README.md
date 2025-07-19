@@ -13,7 +13,7 @@
 [![Github](https://img.shields.io/badge/Github-MrDarkYTgreen?style=for-the-badge&logo=github)](https://github.com/aadi-project3608)
 [![YouTube](https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/@aadi)
 
-![Image](https://i.imgur.com/6WNtJvb.jpeg)
+![Image](https://i.imgur.com/lP22Qga.jpeg)
 
 ```bash
 npm install aadi-babu-api
