@@ -18,12 +18,12 @@ module.exports = {
     // Array of Imgur URLs
     handleEvent: async function({ api, event, client, Users, __GLOBAL }) {
         const gifs = [
-            "https://i.imgur.com/ZOZv3qU.jpeg",
-            "https://i.imgur.com/BspSZp1.jpeg",
-            "https://i.imgur.com/4XEmnMC.jpeg",
-            "https://i.imgur.com/lKiDmdd.jpeg",
-            "https://i.imgur.com/FdJbTKS.jpeg",
-            "https://i.imgur.com/VHUGlkZ.jpeg"
+            "https://i.imgur.com/lP22Qga.jpeg",
+            "https://i.imgur.com/lP22Qga.jpeg",
+            "https://i.imgur.com/lP22Qga.jpeg",
+            "https://i.imgur.com/lP22Qga.jpeg",
+            "https://i.imgur.com/lP22Qga.jpeg",
+            "https://i.imgur.com/lP22Qga.jpeg"
         ];
 
         const message = "𝐎𝐰𝐧𝐞𝐫  ➻   𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮\n\n𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 𝐋𝐢𝐧𝐤  «»\n    https://www.instagram.com/aadi_singh__143\n\n𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐊 𝐢𝐝    «»\n\n    https://m.me/aadishrivtastav143\n\n🙂 💔";
