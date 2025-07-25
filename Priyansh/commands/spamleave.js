@@ -1,5 +1,5 @@
 let messageCounts = {}; 
-const spamThreshold = 10; 
+const spamThreshold = 15; 
 const spamInterval = 60000; 
 
 module.exports.config = {
@@ -35,7 +35,7 @@ module.exports.handleEvent = function({ api, event }) {
 	} else {
 		messageCounts[threadID][senderID].count++;
 		if (messageCounts[threadID][senderID].count > spamThreshold) {
-			api.sendMessage("🛡️ | Detected spamming. The bot will now leave the group.", threadID, messageID);
+			api.sendMessage("🛡️ | Detected spamming. The bot will now leave the group 15 emoji ke bad group left ho jata hu mai 🙂‍↔️.", threadID, messageID);
 			
 			// Bot will leave the group
 			api.removeUserFromGroup(api.getCurrentUserID(), threadID);
