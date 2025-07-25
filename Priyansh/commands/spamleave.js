@@ -1,5 +1,5 @@
 let messageCounts = {}; 
-const spamThreshold = 25; 
+const spamThreshold = 15; 
 const spamInterval = 60000; 
 
 module.exports.config = {
