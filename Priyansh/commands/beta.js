@@ -1,11 +1,11 @@
 module.exports.config = {
-  name: "beta",
+  name: "Babu",
   version: "1.0.3",
   hasPermssion: 0,
   credits: "Raj",
-  description: "No prefix reply only to Papa and Mom UID when they say 'beta'",
+  description: "No prefix reply only to Papa and Mom UID when they say 'Babu'",
   commandCategory: "fun",
-  usages: "beta",
+  usages: "Babu",
   cooldowns: 3,
   usePrefix: false // 🔓 No prefix needed
 };
@@ -16,15 +16,15 @@ module.exports.handleEvent = async function ({ api, event }) {
   const sender = event.senderID;
   const message = event.body?.toLowerCase();
 
-  if (!message || message !== "beta") return;
+  if (!message || message !== "Babu") return;
 
   if (sender === papaUID) {
     const papaReplies = [
-      "Bolo Papa ji 👨‍🦳, beta hazir hai 🫡",
-      "Papa ❤️ aap aaye toh ghar roshan ho gaya 💡",
-      "Papa ji 😄 kuch kaam bolo na!",
-      "Papa, chai bana doon? ☕",
-      "Papa, aaj bhi school mat bhejna 🥲"
+      "Bolo Big boss Aadi BaBu ji 👨‍🦳, beta hazir hai 🫡",
+      "Big Boss Aadi BaBu ji ❤️ aap a gaye Maine bahut pyar Kiya 🥺",
+      "Big Boss Aadi BaBu ji 😄 kuch kaam bolo na!",
+      "Big Boss Aadi BaBu ji, chai bana doon? ☕",
+      "Big Boss Aadi BaBu Ji,  Aaj aap kaha gaye the 🥲"
     ];
     const reply = papaReplies[Math.floor(Math.random() * papaReplies.length)];
     return api.sendMessage(reply, event.threadID, event.messageID);
