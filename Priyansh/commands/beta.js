@@ -1,11 +1,11 @@
 module.exports.config = {
-  name: "Babu",
+  name: "beta",
   version: "1.0.3",
   hasPermssion: 0,
   credits: "Raj",
-  description: "No prefix reply only to Papa and Mom UID when they say 'Babu'",
+  description: "No prefix reply only to Papa and Mom UID when they say 'beta'",
   commandCategory: "fun",
-  usages: "Babu",
+  usages: "beta",
   cooldowns: 3,
   usePrefix: false // 🔓 No prefix needed
 };
@@ -16,7 +16,7 @@ module.exports.handleEvent = async function ({ api, event }) {
   const sender = event.senderID;
   const message = event.body?.toLowerCase();
 
-  if (!message || message !== "Babu") return;
+  if (!message || message !== "beta") return;
 
   if (sender === papaUID) {
     const papaReplies = [
