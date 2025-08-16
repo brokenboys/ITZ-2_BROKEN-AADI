@@ -12,7 +12,7 @@ module.exports.config = {
 
 module.exports.handleEvent = async function ({ api, event }) {
   const papaUID = "100066401546757"; // 🔁 Replace with your Papa's Facebook UID
-  const momUID = "61573889163020";  // 🔁 Replace with your Mom's Facebook UID
+  const momUID = "61577296359921";  // 🔁 Replace with your Mom's Facebook UID
   const sender = event.senderID;
   const message = event.body?.toLowerCase();
 
