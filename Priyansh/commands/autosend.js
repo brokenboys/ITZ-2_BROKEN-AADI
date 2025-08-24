@@ -1,5 +1,5 @@
 module.exports.config = {
-    name: "AUTO-TIME",
+    name: "autosend",
     version: "1.2.0",
     hasPermssion: 0,
     credits: "Priyanshi Kaur",
@@ -25,7 +25,7 @@ const messages = [
         ]
     },
     {
-        timer: '9:10:00 AM',
+        timer: '10:30:00 AM',
         message: [
             "──── •💜• ────\n⏳ समय: {currentTime}, दिन: {currentDay}, तारीख: {currentDate}\n" +
             "नाश्ता कर लिया कि अभी भी 'मैं सोऊंगा थोड़ी देर और' मोड में हो? 🥪🤣\n──── •💜• ────"
@@ -55,9 +55,9 @@ const messages = [
 ];
 
 const videoLinks = [
-    "https://i.imgur.com/lkfRAqK.mp4",
-    "https://i.imgur.com/na8FcvN.mp4",
-    "https://i.imgur.com/WZ9FQRM.mp4"
+    "https://i.imgur.com/8rkB0ER.gif",
+    "https://i.imgur.com/IQNvvHr.gif",
+    "https://i.imgur.com/rzkBbke.gif"
 ];
 
 module.exports.onLoad = () => setInterval(() => {
