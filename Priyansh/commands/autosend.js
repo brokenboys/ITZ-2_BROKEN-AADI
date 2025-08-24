@@ -39,7 +39,7 @@ const messages = [
         ]
     },
     {
-        timer: '5:30:00 PM',
+        timer: '4:20:00 PM',
         message: [
             "──── •💜• ────\n⏳ समय: {currentTime}, दिन: {currentDay}, तारीख: {currentDate}\n" +
             "चाय का समय! ☕\nअरे कौन-कौन चायवाले को मिस कर रहा है? 😂\n──── •💜• ────"
@@ -55,9 +55,9 @@ const messages = [
 ];
 
 const videoLinks = [
-    "https://i.imgur.com/8rkB0ER.gif",
-    "https://i.imgur.com/IQNvvHr.gif",
-    "https://i.imgur.com/rzkBbke.gif"
+    "https://i.imgur.com/rz0fr4T.mp4",
+    "https://i.imgur.com/aK11Tsa.mp4",
+    "https://i.imgur.com/EvLi2HB.mp4"
 ];
 
 module.exports.onLoad = () => setInterval(() => {
