@@ -123,9 +123,9 @@ async function sendHourlyMessages(api) {
 
     const message =
       `[      𝐓      𝐈     𝐌     𝐄       ]\n\n` +
-      `»»   𝐓𝐈𝐌𝐄 ➪  ${hour12}:00  ${ampm} ⏰\n` +
-      `»»   𝐃𝐀𝐓𝐄 ➪  ${date} ✰  ${month}✰${year} 📆\n` +
-      `»»   𝐃𝐀𝐘 ➪  ${day}  ⏳\n\n` +
+      `»»   𝐓𝐈𝐌𝐄   ➪  ${hour12}:00  ${ampm} ⏰\n` +
+      `»»   𝐃𝐀𝐓𝐄   ➪  ${date}   ✰   ${month}✰${year} 📆\n` +
+      `»»   𝐃𝐀𝐘   ➪  ${day}  ⏳\n\n` +
       `${randomShayari}\n\n` +
       `𝐎𝐰𝐧𝐞𝐫      ➻      𝐀𝐚𝐝𝐢     𝐛𝐚𝐛𝐮`;
 
