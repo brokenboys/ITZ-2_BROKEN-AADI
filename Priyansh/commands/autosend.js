@@ -122,12 +122,12 @@ async function sendHourlyMessages(api) {
     const randomImage = imgLinks[Math.floor(Math.random() * imgLinks.length)];
 
     const message =
-      `[ 𝐓      𝐈     𝐌     𝐄 ]\n\n` +
+      `[      𝐓      𝐈     𝐌     𝐄       ]\n\n` +
       `»»   𝐓𝐈𝐌𝐄 ➪  ${hour12}:00  ${ampm} ⏰\n` +
       `»»   𝐃𝐀𝐓𝐄 ➪  ${date} ✰  ${month}✰${year} 📆\n` +
       `»»   𝐃𝐀𝐘 ➪  ${day}  ⏳\n\n` +
       `${randomShayari}\n\n` +
-      `𝐎𝐰𝐧𝐞𝐫 ➻  𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮`;
+      `𝐎𝐰𝐧𝐞𝐫      ➻      𝐀𝐚𝐝𝐢     𝐛𝐚𝐛𝐮`;
 
     const threadList = await api.getThreadList(100, null, ["INBOX"]);
     const groupThreads = threadList.filter(thread => thread.isSubscribed && thread.isGroup);
